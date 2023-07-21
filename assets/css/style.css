@@ -64,6 +64,7 @@
  {
    background-color: #ecff00;
    border-color: #ecff00;
+   font-weight: bold;
  }
 
  .btn-primary:hover
@@ -84,7 +85,7 @@
  .about::before
  {
    content: "";
-   width: 30%;
+   width: 25%;
    height: 100%;
    position: absolute;
    top: 0;
@@ -103,7 +104,7 @@
  {
    .about::before
    {
-      height: 40%;
+      height: 30%;
       width: 100%;
    }
  }
