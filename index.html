@@ -1,24 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- line awesome -->
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
+    <!-- app js -->
+    <script src="./assets/js/app.js"></script>
     <title>GBHL_Sacco</title>
-  </head>
-  <body>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+</head>
+
+<body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.jpg" >
+                <img src="assets/images/logo.jpg">
                 <p style="display: inline;">Grain Bulk Sacco</p>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,20 +38,22 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
-                    </li>  
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
-                    </li> 
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
-                    </li> 
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
-                    </li> <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
-                    </li> <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">contact</a>
-                    </li> 
+                    </li>
                 </ul>
                 <a href="#" class="btn btn-primary">Download</a>
             </div>
@@ -56,14 +67,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-white">
                     <h1 class="display-4 text-white fw-bold">Ready to take your business growth to the next level?</h1>
-                    <p class="lead mt-3 mb-4 mx-auto" style="max-width: 600px;">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    <p class="lead mt-3 mb-4 mx-auto" style="max-width: 600px;">There are many variations of passages of
+                        Lorem Ipsum available, but the majority have
                         suffered alterations</p>
                     </p>
                     <a href="" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
         </div>
-       
+
     </div>
     <!-- //HERO -->
 
@@ -72,60 +84,269 @@
         <div class="container">
             <div class="row align-items-center gy-5">
                 <div class="col-lg-5">
-                    <img src="/assets/images/sacco_abt.jpg" style="height: 100%; width:100%; border-radius: 4px;">
+                    <img src="./assets/images/sacco_abt.jpg" style="height: 100%; width:100%; border-radius: 4px;">
                 </div>
                 <div class="col-lg-6 offset-lg-1">
-                    <h4 class="btn fw-bold" style="background-color: #0d1c34; color:#ecff00; cursor: none;">About Company</h4>
+                    <h4 class="btn fw-bold" style="background-color: #0d1c34; color:#ecff00; cursor: none;">About
+                        Company</h4>
                     <h1 class="mt-2 mb-4">Who we are</h1>
                     <p class="mb-4">Grainbulk sacco is a licensed Non Withdrawal Deposit taking
                         sacco (NWDT) established in the year 2002 with the main aim
                         of empowering member's social economic status.
                         Its membership is drawn from Eleven (11) companies doing
                         business Grain Bulk Handlers Ltd. </p>
-                    <a href="#" class="btn btn-primary fw-bold">Read more</a>
+                    <button href="#" class="btn btn-primary fw-bold" onclick="display()">Read more <i class="las la-angle-double-down"></i></button>
                     </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ethos -->
+    <section id="ethos" class="ethos" style="display: none;">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="section-title">
+                    <p class="btn fw-bold"
+                        style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px;">Our Ethos</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-6 ">
+                        <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%">
+                            <div class="iconbox rounded-3">
+                                <img src="./assets/images/vision.png" style="width:50px;height: 50px;">
+                            </div>
+                            <h3 class="mt-4 mb-3 fw-bold" style="color: #ecff00;">Vision</h3>
+                            <p>To provide financial needs to its members at affordable and attractive rates</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 ">
+                        <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%">
+                            <div class="iconbox rounded-3">
+                                <img src="./assets/images/target.png" style="width:50px;height: 50px;">
+                            </div>
+                            <h3 class="mt-4 mb-3 fw-bold" style="color: #ecff00;">Mission</h3>
+                            <p>To be an attractive financial lending institution with the aim of
+                                empowering its members living standards.</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-sm-6 ">
+                        <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%">
+                            <div class="iconbox rounded-3">
+                                <img src="./assets/images/diamond.png" style="width:50px;height: 50px;">
+                            </div>
+                            <h3 class="mt-4 mb-3 fw-bold" style="color: #ecff00;">Core Values</h3>
+                            <p>We firmly believe in upholding corporate values as the central guiding principles that
+                                form the bedrock of our business conduct. These values are the cornerstone of our
+                                culture and serve as compass points to steer our behavior.
+                                They define what we stand for, what motivates us, and what influences our decisions,
+                                actions, and interactions with others on a daily basis.
+                                Our chosen core values reflect our unwavering commitment to integrity, purpose, and
+                                building meaningful relationships with all those we engage with.</p>
+                            <ul>
+                                <li><strong>Efficiency: - </strong>We prioritize streamlined operations, smart
+                                    decision-making,
+                                    and continuous improvement to deliver high-quality services to our members and
+                                    stakeholders.Our commitment is aimed at optimizing our resources and processes to
+                                    achieve maximum output with minimal waste </li>
+                                <li><strong>Customer satisfaction: - </strong>Our unwavering commitment is to ensure
+                                    that our members and stakeholders'
+                                    needs and expectations are met and exceeded. We aim to build strong and lasting
+                                    relationships, foster trust, and create a positive and rewarding experience for
+                                    everyone we serve.</li>
+                                <li> <strong>Adherence to Ethical, practises, integrity, transparency, a listening &
+                                        caring partner : - </strong>We strongly uphold the importance of adhering to
+                                    ethical practices, promoting integrity, transparency,
+                                    and being an attentive and compassionate partner. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- //ethos -->
     <!-- ABOUT -->
 
     <!-- services -->
-    <section id="services" class="bg-light">
+    <section id="services" class="bg-light services">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <p class="btn fw-bold" style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 20px;">Our Products</p>
-                        <h1 class="mt-2 mb-4">Services that we provide</h1>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit libero eget nunc vulputate hendrerit. 
-                            Pellentesque non dolor in quam fringilla rhoncus. </p>
+                        <p class="btn fw-bold"
+                            style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px;">Our
+                            Products</p>
+                        <p class="mb-2" style="letter-spacing: 1.5px; text-align: left;">At Grainbulk sacco , we take
+                            pride in offering you two essential products that form the foundation of your financial
+                            success - Credit and Savings.
+                            Whether you're striving to manage your expenses efficiently or looking to secure a stable
+                            and prosperous future, our comprehensive range of Credit and Savings solutions is here to
+                            support you every step of the way. </p>
                     </div>
                 </div>
             </div>
             <div class="prod-intro">
-            <h3 class="btn fw-bold" style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 20px;">Credit Products</h3>
-            <p class="mt-2">Welcome to the diverse world of credit solutions at our SACCO. We take pride in presenting a wide array of credit products 
-                meticulously designed to cater to your specific financial requirements.</p>
-            </div>
-            
-            <div class="row">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="service p-4 p-sm-5" style="background: #0d1c34;">
-                        <img src="./assets/images/mortgage-loan.png"  style="width:unset;">
-                    <h6 class="mt-4 mb-3">Development Loans</h6>
-                    <p>Welcome to the diverse world of credit solutions at our SACCO. We take pride in presenting a wide array of credit products 
+                <h3 class="btn fw-bold"
+                    style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 20px;">Credit
+                    Products</h3>
+                <p class="mt-2" style="text-align: left;">Welcome to the diverse world of credit solutions at our SACCO.
+                    We take pride in presenting a wide
+                    array of credit products
                     meticulously designed to cater to your specific financial requirements.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 ">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/mortgage-loan (6).png" style="width:50px;height: 50px;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Development Loans</h6>
+                        <p>This is a loan product for investment, development or improve
+                            projects.</p>
+                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                        <ul>
+                            <li>Maximum repayment period of 72 months</li>
+                            <li>Maximum loan of up to 3 times members deposit</li>
+                            <li>Security is deposits & guarantors.</li>
+                        </ul>
                     </div>
-                    
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/money-bag (3).png" style="width:unset;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Emergency Loans</h6>
+                        <p>Emergencies e.g hospitalization,funeral expenses & other unforeseen
+                            circumstances.</p>
+                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                        <ul>
+                            <li>Maximum repayment period is 12 months.</li>
+                            <li>Loan of up to 100,000/=</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/student (2).png" style="width:unset;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Educational Loans</h6>
+                        <p>This servers members need to persue education.</p>
+                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                        <ul>
+                            <li>Maximum repayment period of up to 15 months.</li>
+                            <li>Loan of up to 200,000/=</li>
+                            <li>Attach a fee structure of the school, college etc.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 " style="margin-left: 200px;">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/shop.png" style="width:50px;height: 50px;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Item Loan</h6>
+                        <p>This is for purchasing products eg tanls,building materials etc</p>
+                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                        <ul>
+                            <li>Maximum repayment period of upto 36 months</li>
+                            <li>Maximum loan of up to 3 times</li>
+                            <li>Attach an invoice of the item you want to buy, for direct payment
+                                to that specific bank</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 ">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/payment.png" style="width:50px;height: 50px;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Instant Loan</h6>
+                        <p>...</p>
+                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                        <ul>
+                            <li>Maximum loan of up to 10,000/=</li>
+                            <li>Repayment period of up to 2 mont</li>
+                            <li>S10% on the principal amount.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="prod-intro">
+                <h3 class="btn fw-bold"
+                    style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 20px;">Savings Products
+                </h3>
+                <p class="mt-2" style="text-align: left;">Welcome to the realm of financial empowerment with our SACCO's
+                    Savings Solutions!
+                    We are thrilled to introduce a comprehensive range of savings products crafted to suit your unique
+                    financial needs.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 ">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/money-graph-with-up-arrow.png" style="width:50px;height: 50px;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Share Capital</h6>
+                        <p>This is a shareholding that every member MUST hold in the
+                            Sacco.</p>
+                        <ul>
+                            <li>Minimum is Ksh. 750</li>
+                            <li>It earns dividends</li>
+                            <li>Can be used as a security against a loan.</li>
+                            <li>Upon termination, It can only be transferred to another
+                                existing member as per Grainbulk Non-WDT Sacco laws.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/money-bag (3).png" style="width:unset;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Member Deposits</h6>
+                        <p>These are monthly non-withdrawable savings that
+                            members make to the sacco through their membership.</p>
+                        <ul>
+                            <li>Minimum amount is 2000/=</li>
+                            <li>Earns interest</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                        <div class="iconbox rounded-3">
+                            <img src="./assets/images/bank-account.png" style="width:unset;">
+                        </div>
+                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">SACCO M-LOAN</h6>
+                        <p>M- loan is a mobile banking service that rides on the M-Pesa
+                            platform
+                            To access Sacco M-LOAN services, Dial *377*488</p>
+                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                        <ul>
+                            <li>Maximum limit of 20,000/=</li>
+                            <li>Interest rate of 6%</li>
+                            <li>Payment period 30 days</li>
+                            <li>Default period after 30 days.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- /services -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/js/app.js">
- 
-  </body>
+
+</body>
+
 </html>

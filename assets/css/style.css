@@ -17,9 +17,9 @@
     color: #152c50;
  }
 
- a
+a
  {
-    color:#323232;
+    color:aquamarine;
     text-decoration: none;
     transition: all 0.4s ease;
     font-weight: 500;
@@ -27,7 +27,7 @@
 
  a:hover
  {
-    color: #ecff00
+    color: #ecff00;
  }
 
  img
@@ -112,8 +112,8 @@
  .section-title
  {
    text-align: center;
-   max-width: 600px;
-   margin: 0 auto 40px auto;
+   max-width: 800px;
+   margin: 0 auto 20px auto;
  }
 
  .section-title p
@@ -138,3 +138,25 @@
   color:#0d1c34;
   letter-spacing: 1.5px;
  }
+
+ /* services */
+ .iconbox
+{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecff00;
+    color: #152c50
+}
+
+.shadow-effect
+{
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover
+{
+    box-shadow: -8px 8px 0 0 #ecff00;
+}
