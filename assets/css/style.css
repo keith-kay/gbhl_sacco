@@ -57,6 +57,7 @@ a
    border-radius: 5px;
    transition: all 0.2s ease;
    color: #0d1c34;
+   
  }
 
  .btn-primary
@@ -159,4 +160,12 @@ a
 .shadow-effect:hover
 {
     box-shadow: -8px 8px 0 0 #ecff00;
+}
+
+/* FOOTER */
+.icon-container 
+{
+  display: flex;
+  width: 150px;
+  align-items: center;
 }
