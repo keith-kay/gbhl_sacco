@@ -257,30 +257,41 @@
             </div>
             <div class="row">
                 <style>
-                    /* Media query for screens with a maximum width of 992px (smallest screens) */
-                    @media screen and (max-width: 992px) {
-                      .col-sm-12 {
-                        margin-left: 0; /* Remove the left margin for smaller screens */
-                      }
+                    @media (min-width: 992px) 
+                    {
+                    #item  {
+                        /* Add your desired margin for larger screens here */
+                        margin-left: 200px;
+                    }
+                    }
+
+                    /* CSS for smaller screens (up to sm) */
+                    @media (max-width: 767px) {
+                    .col-sm-12 {
+                        /* Set the margin to 0 for smaller screens */
+                        margin-left: 0;
+                    }
                     }
                   </style>
-                <div class="col-lg-4 col-sm-12" style="margin-left: 200px;" data-aos="fade-right" data-aos-duration="3000">
-                    <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
-                        <div class="iconbox rounded-3">
-                            <img src="./assets/images/shop.png" style="width:50px;height: 50px;">
+                
+                    <div id="item" class="col-lg-4 col-sm-12" data-aos="fade-right" data-aos-duration="3000">
+                        <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
+                            <div class="iconbox rounded-3">
+                                <img src="./assets/images/shop.png" style="width:50px;height: 50px;">
+                            </div>
+                            <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Item Loan</h6>
+                            <p>This is for purchasing products eg tanls,building materials etc</p>
+                            <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
+                            <ul>
+                                <li>Maximum repayment period of upto 36 months</li>
+                                <li>Maximum loan of up to 3 times</li>
+                                <li>Attach an invoice of the item you want to buy, for direct payment
+                                    to that specific bank</li>
+                            </ul>
                         </div>
-                        <h6 class="mt-3 mb-1 fw-bold" style="color: #ecff00;">Item Loan</h6>
-                        <p>This is for purchasing products eg tanls,building materials etc</p>
-                        <h6 class="fw-bold" style="color: #ecff00;">Features</h6>
-                        <ul>
-                            <li>Maximum repayment period of upto 36 months</li>
-                            <li>Maximum loan of up to 3 times</li>
-                            <li>Attach an invoice of the item you want to buy, for direct payment
-                                to that specific bank</li>
-                        </ul>
                     </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 " data-aos="fade-left" data-aos-duration="3000">
+                
+                <div class="col-lg-4 col-sm-12 " style="margin-left: 0;" data-aos="fade-left" data-aos-duration="3000">
                     <div class="service p-4 p-sm-5 rounded-3 shadow-effect" style="background: #0d1c34; height:95%;">
                         <div class="iconbox rounded-3">
                             <img src="./assets/images/payment.png" style="width:50px;height: 50px;">
