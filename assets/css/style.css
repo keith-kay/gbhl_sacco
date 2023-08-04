@@ -136,6 +136,12 @@ a
       width: 100%;
    }
 
+   ul.navbar-nav li.nav-item .nav-link:hover 
+  {
+    background-color: transparent; /* Reset background color */
+    color: initial;
+  } 
+
  }
 
  /* secrion-title, services */
@@ -148,7 +154,7 @@ a
 
  .section-title p
  {
-   color:#0d1c34;
+   color:#010202ef;
  }
 
  .section-title h6
@@ -165,8 +171,8 @@ a
 
  .prod-intro p
  {
-  color:#0d1c34;
-  letter-spacing: 1.5px;
+  color:#010202ef;
+  
  }
 
  /* services */
