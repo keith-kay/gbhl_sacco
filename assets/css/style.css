@@ -72,11 +72,16 @@ a
  /* content */
  #home
  {
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/desk.jpeg);
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/coins.jpg);
     background-position:center;
     background-size: cover;
  }
 
+ #home .container
+ {
+  
+    text-align: left;
+ }
  /* BTN */
  .btn
  {
@@ -142,6 +147,11 @@ a
     color: initial;
   } 
 
+  #home .container
+ {
+  width: 100%;
+  text-align: left;
+ }
  }
 
  /* secrion-title, services */
