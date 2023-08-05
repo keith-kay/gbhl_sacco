@@ -133,6 +133,13 @@ c
   right: -50px;
 }
 
+.carousel-control-prev,
+.carousel-control-next 
+{
+  top: 50%; /* Adjust this value to vertically center the buttons */
+  transform: translateY(-50%);
+}
+
  /* BTN */
  .btn
  {
@@ -141,20 +148,13 @@ c
    border-radius: 5px;
    transition: all 0.2s ease;
    color: #0d1c34;
-   
- }
-
- .btn-primary
- {
    background-color: #ecff00;
-   border-color: #ecff00;
    font-weight: bold;
  }
-
- .btn-primary:hover
+   
+ .btn:hover
  {
    background-color: #ecff00;
-   border-color: #ecff00;
    transform: scale(1.1);
    color: #0d1c34;
  }
@@ -184,7 +184,7 @@ c
    
  }
 
- @media (max-width: 992px)
+ @media (max-width: 576px)
  {
    .about::before
    {
@@ -203,7 +203,9 @@ c
   width: 100%;
   text-align: left;
  }
+
  }
+
 
  /* secrion-title, services */
  .section-title
@@ -256,6 +258,12 @@ c
 .shadow-effect:hover
 {
     box-shadow: -8px 8px 0 0 #ecff00;
+}
+
+/* contact */
+.form-control:hover 
+{
+  border: 2px solid #ecff00;
 }
 
 /* FOOTER */
