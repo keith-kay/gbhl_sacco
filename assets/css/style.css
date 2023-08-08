@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500&display=swap');
 /* colors to be used
    #0d1c34 - teal
    #ecff00 - yellow
@@ -21,6 +21,11 @@
   color: #0d1c34;
   font-weight: bold;
 }  
+
+.navbar
+{
+  height: 80px;
+}
   
  ul.navbar-nav li.nav-item .nav-link:hover 
 {
@@ -282,4 +287,3 @@ c
   margin: 0;
   font-size: 18px;
 }
-
