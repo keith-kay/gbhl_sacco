@@ -25,7 +25,9 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
-    
+    <div id="preloader">
+        <div class="circular-image"></div>
+    </div>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
@@ -43,7 +45,7 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">About</i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Products</a>
@@ -765,6 +767,16 @@
         <!-- aos initialization -->
         <script>
             AOS.init();
+        </script>
+
+        <!-- preloader script -->
+        <script>
+            var loader = document.getElementById("preloader");
+            window.addEventListener("load", function()
+            {
+                loader.style.display = "none";
+            }
+            )
         </script>
     <link rel="stylesheet" href="./assets/js/app.js">
 
