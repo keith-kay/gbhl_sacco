@@ -31,9 +31,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#" style="background-color: white;">
+            <a class="navbar-brand" href="#" style="background-color: white; height: auto;">
                 <img src="assets/images/logo.jpg">
-                <p style="display: inline;">Grain Bulk Non WDT Sacco</p>
+                <!-- <p style="display: inline;">Grain Bulk Non WDT Sacco</p> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -78,7 +78,7 @@
         <!-- slider carousel -->
         
         <div id="home">
-        <div id="carouselExampleControls" class="carousel slide min-vh-100" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="3000">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up" data-aos-duration="3000">
             <div class="carousel-inner">
         
                 <div class="carousel-item ">
@@ -126,6 +126,24 @@
                         </div>
                     </div>
                     <div class="background-image" style="background-image: url('./assets/images/sav\ chart.jpg');"></div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="overlay">
+                        <div class="row"> 
+                            <div class="col-lg-8 col-sm-12 text-white">
+                                <h2 class="display-6 text-white fw-bold">Instant Mobile Loans</h2>
+                                <p class="col-lg-8 mt-3 mb-3">Access hassle-free loans right from your smartphone anytime, anywhere. 
+                                    <br>Experience the future of lending with our SACCO's mobile loan solutions.
+                                </p>
+                                <a href="#services" class="btn btn-primary">Read More</a>
+                            </div>
+                            <div class="col-lg-2 col-md-4 col-sm-12 offset-lg-1 d-none d-lg-block" style="padding-left: 180px; padding-bottom:20px;"> <!-- Move the image column to the right -->
+                                <img src="./assets/images/sacco_dial_logo.jpg" style="height: 240px; width: 300px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="background-image" style="background-image: url('./assets/images/mloan.webp');"></div>
                 </div>
         
                 <div class="carousel-item">
@@ -448,44 +466,44 @@
     <section id="contact" class="contact" style="background-color: #DDDDDD;">
         <div class="container my-5" style="background-color: #fffffffd;  border-radius: 10px; color: #000000e5;">
             <div class="row">
-                <div class="col-lg-4 d-none d-lg-block" style="background-color: #ecff00; color: #0d1c34; border-radius: 5px;">
-                    <h3 class="fw-bold" style="color: #0d1c34; padding-top: 50px; padding-left: 50px;">How to get to us:</h3>
-                    <div class="icon-container mb-2 mt-4" style="padding: 50px;">                                               
+                <div class="col-lg-4 d-none d-lg-block gradient-bg" style="color: #0d1c34; border-radius: 5px;">
+                    <h3 class="fw-bold" style="color: #0d1c34; padding-top: 50px; padding-left: 30px;">How to get to us:</h3>
+                    <div class="icon-container mb-2 mt-4" style="padding:30px;">                                               
                         <i class="las la-phone fw-bold" style=" color: #0d1c34; font-size: 30px; "></i>                        
                         <span class="fw-bold" style="margin-left: 8px;">0700638471/0781010300</span>                    
                     </div>
-                    <div class="icon-container mb-2" style="padding: 50px;">                                               
+                    <div class="icon-container mb-2" style="padding: 30px;">                                               
                         <i class="las la-map-marker-alt  fw-bold" style=" color: #0d1c34; font-size: 30px;"></i>                        
-                        <span class="fw-bold" style="margin-left: 8px;">P.O.BOX 80469-80100</span>
+                        <p class="fw-bold" style="margin-left: 4px;  word-break: keep-all;">BOX Adrress 80469(80100)</p>
                     </div>
-                    <div class="icon-container mb-2" style="padding: 50px;">                                               
+                    <div class="icon-container mb-2" style="padding: 30px;">                                               
                         <i class="las la-envelope fw-bold" style=" color: #0d1c34; font-size: 30px;"></i>
-                        <span class="fw-bold"style="margin-left: 8px;">grainbulksacco@gmail.com</span>
+                        <span class="fw-bold"style="margin-left: 8px;  word-break: keep-all;">grainbulksacco@gmail.com</span>
                     </div>          
                 </div>
                 <div class="col-lg-8" style="padding: 50px;">
                     <h1 class="mb-3 btn fw-bold"  style="background-color: #0d1c34; color:#ecff00; cursor: none; font-size: 30px;">Contact Us</h1>
-                    <form>
+                    <form action="mail.php" method="post">
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label for="your-name" class="form-label  fw-bold">Your Name</label>
-                                <input type="text" class="form-control" id="your-name" name="your-name" required>
+                                <label for="your-name" class="form-label  fw-bold">First Name</label>
+                                <input type="text" class="form-control" id="your-name" name="fname" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="your-surname" class="form-label fw-bold">Your Surname</label>
-                                <input type="text" class="form-control" id="your-surname" name="your-surname" required>
+                                <label for="your-surname" class="form-label fw-bold">Last Name</label>
+                                <input type="text" class="form-control" id="your-surname" name="lname" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="your-email" class="form-label fw-bold">Your Email</label>
-                                <input type="email" class="form-control" id="your-email" name="your-email" required>
+                                <input type="email" class="form-control" id="your-email" name="email" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="your-subject" class="form-label fw-bold">Your Subject</label>
-                                <input type="text" class="form-control" id="your-subject" name="your-subject">
+                                <input type="text" class="form-control" id="your-subject" name="subject">
                             </div>
                             <div class="col-12">
                                 <label for="your-message" class="form-label fw-bold">Your Message</label>
-                                <textarea class="form-control" id="your-message" name="your-message" rows="5"
+                                <textarea class="form-control" id="your-message" name="message" rows="5"
                                     required></textarea>
                             </div>
                             <div class="col-12">
@@ -644,7 +662,7 @@
     <section id="membership" style="background-color: #DDDDDD;;">
         <div class="container my-5" style="background-color: #fffffffd;  border-radius: 10px; color: #000000e5;">
             <div class="row">
-                <div class="col-lg-4 d-none d-lg-block" style="background-color: #ecff00; color: #0d1c34; border-radius: 5px;">
+                <div class="col-lg-4 d-none d-lg-block gradient-bg" style="color: #0d1c34; border-radius: 5px;">
                     <h3 class="fw-bold" style="color: #0d1c34; padding-top: 50px; padding-left: 20px;">Why choose us?</h3>
                         <ol class="fw-bold" style="font-size: 20px; ">
                             <li class="mb-1 mt-4" style="margin-left: 20px;">High Dividend rates on share capital</li>
